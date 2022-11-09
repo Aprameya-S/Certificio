@@ -1,0 +1,31 @@
+$text-black: #000404;
+$bg-color: #c4c4c4;
+$text-font: 'Montserrat', sans-serif;
+$bezier: .6s cubic-bezier(.19,1,.22,1);
+$highlight-color: #ff2e00;
+
+#download-btn {
+    place-self: right;
+    color: $bg-color;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    scale: 1 0.9;
+    background-color: $text-black;
+    border-radius: 100vw;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    padding-inline: 30px;
+    text-transform: capitalize;
+    margin-block: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    #download-btn {
+        font-size: 16px;
+        font-weight: 500;
+        padding: 10px;
+        width: 90vw;
+    }
+}

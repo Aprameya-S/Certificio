@@ -1,0 +1,18 @@
+.forgot-password {
+    text-align: right;
+    padding-top: 5px;
+}
+.login-card .card-wrapper button {
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+.login-button-and-link {
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (max-width: 500px){
+    .forgot-password {
+        padding-top: 10px;
+    }
+}

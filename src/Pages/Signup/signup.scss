@@ -1,0 +1,145 @@
+$text-black: #000404;
+$bg-color: #c4c4c4;
+$text-font: 'Montserrat', sans-serif;
+$bezier: .6s cubic-bezier(.19,1,.22,1);
+
+* {
+    font-family: $text-font;
+    color: $text-black;
+}
+.card {
+    display: grid;
+    margin-top: 15vh;
+    align-items: center;
+}
+.card .card-wrapper {
+    padding-left: 5vw;
+    width: min-content;
+    h1 {
+        font-weight: 600;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+}
+.group {
+    margin-bottom: 20px;
+}
+.group input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid $text-black;
+    padding: 10px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    padding-right: 0px;
+    width: 400px;
+    -webkit-box-shadow:200px 200px 100px $bg-color inset; 
+    box-shadow:200px 200px 100px $bg-color inset;     
+
+    &::placeholder,
+    &:-moz-placeholder,
+    &::-webkit-input-placeholder {
+        font-family: $text-font !important;
+        font-style: italic;
+        font-size: 16px;
+    }
+}
+.card-wrapper button {   
+    place-self: right;
+    color: $bg-color;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    scale: 1 0.9;
+    background-color: $text-black;
+    border-radius: 100vw;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    padding-inline: 25px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.login-prompt {
+
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 500px){
+    .card .card-wrapper {
+        h1 {
+            font-size: 40px;
+        }
+    }
+    .group input {
+        width: 90vw;
+        font-size: 16px;
+        font-weight: 500;
+
+        &::placeholder,
+        &:-moz-placeholder,
+        &::-webkit-input-placeholder {
+            font-family: $text-font !important;
+            font-style: italic;
+            font-size: 14px;
+        }
+    }
+    .card-wrapper button {
+        font-weight: 500;
+    }
+    .login-prompt{
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+// ----------------------------------------
+
+#multiple-signup {
+    padding-inline: 5vw;
+}
+#ms-signup-section {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 15vh;
+    h1 {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .card {
+        display: block;
+        margin: 0;
+    }
+    .participant-1{
+        grid-column-start: 1;        
+    }
+    .participant-2 {
+        grid-column-start: 2;
+    }
+    .card .card-wrapper {
+        padding: 0;        
+        h3 {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1000px){
+    #ms-signup-section {
+        margin-top: 7vh;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        h1 {
+            margin-bottom: 0px;
+        }
+
+        .participant-2 {
+            grid-column-start: 1;
+        }
+    }
+    .login-prompt {
+        margin-bottom: 50px;
+    }
+}

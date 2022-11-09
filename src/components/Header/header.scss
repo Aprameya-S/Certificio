@@ -1,0 +1,18 @@
+$text-black: #000404;
+$bg-color: #c4c4c4;
+$text-font: 'Montserrat', sans-serif;
+$bezier: .6s cubic-bezier(.19,1,.22,1);
+
+
+.main-header {
+    padding-top: 5x;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 5vw;
+    background-color: $text-black;
+    padding-block: 20px;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
